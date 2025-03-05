@@ -1,1 +1,13 @@
-cxfbdf
+# Normalize line endings across different operating systems
+* text=auto
+
+# Ensure markdown files are treated as text
+*.md text
+
+# Treat shell scripts correctly (Unix-style line endings)
+*.sh text eol=lf
+
+# Prevent Git from showing diffs for binary files
+*.png binary
+*.jpg binary
+*.zip binary
